@@ -47,7 +47,7 @@ Quiz Own - это современное приложение для тести�
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/QuizOwn.git
+git clone https://github.com/DuminAndrew/QuizOwn.git
 cd QuizOwn
 ```
 
