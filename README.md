@@ -2,8 +2,6 @@
 
 Quiz Own - это современное приложение для тестирования знаний, разработанное с использованием Qt6 и C++.
 
-![Screenshot](screenshots/main.png)
-
 ## Возможности
 
 - 🎯 Режим марафона с вопросами из разных разделов
@@ -146,7 +144,7 @@ QuizOwn/
 
 ## Автор
 
-- Андрей Думин
+### Андрей Думин
 
 ## Вклад в проект
 
@@ -158,5 +156,5 @@ QuizOwn/
 4. Отправьте изменения в ваш форк (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request 
 
-git remote add origin https://github.com/yourusername/QuizOwn.git
+git remote add origin https://github.com/DuminAndrew/QuizOwn.git
 git push -u origin main 
