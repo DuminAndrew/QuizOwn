@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="*" Name="QuizOwn" Language="1033" Version="1.0.0.0" Manufacturer="Your Company" UpgradeCode="PUT-GUID-HERE">
+        <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+        <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+        <MediaTemplate EmbedCab="yes" />
+
+        <Feature Id="ProductFeature" Title="QuizOwn" Level="1">
+            <ComponentGroupRef Id="ProductComponents" />
+        </Feature>
+
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="INSTALLFOLDER" Name="QuizOwn">
+                    <!-- Components will be added here -->
+                </Directory>
+            </Directory>
+            <Directory Id="ProgramMenuFolder">
+                <Directory Id="ApplicationProgramsFolder" Name="QuizOwn"/>
+            </Directory>
+            <Directory Id="DesktopFolder" Name="Desktop" />
+        </Directory>
+
+        <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+            <Component Id="ProductComponent" Guid="*">
+                <File Id="QuizOwnEXE" Name="QuizOwn.exe" Source="build/Release/QuizOwn.exe" KeyPath="yes">
+                    <Shortcut Id="startmenuQuizOwn" Directory="ApplicationProgramsFolder"
+                        Name="QuizOwn" WorkingDirectory="INSTALLFOLDER"
+                        Icon="QuizOwn.ico" IconIndex="0" Advertise="yes" />
+                    <Shortcut Id="desktopQuizOwn" Directory="DesktopFolder"
+                        Name="QuizOwn" WorkingDirectory="INSTALLFOLDER"
+                        Icon="QuizOwn.ico" IconIndex="0" Advertise="yes" />
+                </File>
+                <!-- Add other files here -->
+            </Component>
+        </ComponentGroup>
+
+        <Icon Id="QuizOwn.ico" SourceFile="resources/icon.ico"/>
+        <Property Id="ARPPRODUCTICON" Value="QuizOwn.ico" />
+    </Product>
+</Wix> 

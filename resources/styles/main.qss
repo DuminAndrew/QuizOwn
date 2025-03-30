@@ -1,0 +1,216 @@
+/* Основной стиль приложения */
+QMainWindow {
+    background-color: #E3F2FD;
+}
+
+/* Стиль для центрального виджета */
+QWidget#centralWidget {
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* Стиль для левой панели */
+QWidget#leftPanel {
+    background-color: #ffffff;
+    border-right: 2px solid #BBDEFB;
+    border-radius: 15px 0 0 15px;
+    padding: 10px;
+}
+
+/* Стиль для кнопок */
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+    border: 2px solid #1565C0;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+
+QPushButton:disabled {
+    background-color: #BDBDBD;
+}
+
+/* Стиль для кнопок разделов */
+QPushButton#sectionButton {
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #E3F2FD;
+    text-align: left;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+QPushButton#sectionButton:hover {
+    background-color: #E3F2FD;
+    border-color: #2196F3;
+}
+
+QPushButton#sectionButton:checked {
+    background-color: #BBDEFB;
+    border-color: #2196F3;
+    color: #1565C0;
+}
+
+/* Стиль для меток */
+QLabel {
+    color: #333333;
+    font-size: 14px;
+}
+
+QLabel#questionLabel {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #BBDEFB;
+    margin: 10px;
+}
+
+/* Стиль для радио-кнопок */
+QRadioButton {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #E3F2FD;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+QRadioButton:hover {
+    background-color: #E3F2FD;
+    border-color: #2196F3;
+}
+
+QRadioButton:checked {
+    background-color: #BBDEFB;
+    border-color: #2196F3;
+}
+
+/* Стиль для чекбокса */
+QCheckBox {
+    padding: 12px;
+    color: #333333;
+    font-size: 14px;
+}
+
+QCheckBox:hover {
+    color: #1976D2;
+}
+
+/* Стиль для меню */
+QMenuBar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #BBDEFB;
+}
+
+QMenuBar::item {
+    padding: 10px 20px;
+    color: #333333;
+    font-size: 14px;
+}
+
+QMenuBar::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 2px solid #BBDEFB;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 10px 25px;
+    color: #333333;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+/* Стиль для статусной строки */
+QStatusBar {
+    background-color: #ffffff;
+    border-top: 2px solid #BBDEFB;
+    color: #666666;
+    font-size: 12px;
+}
+
+/* Стиль для диалоговых окон */
+QDialog {
+    background-color: #ffffff;
+}
+
+QDialog QPushButton {
+    min-width: 100px;
+}
+
+/* Стиль для списка */
+QListWidget {
+    background-color: #ffffff;
+    border: 2px solid #BBDEFB;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #E3F2FD;
+    border-radius: 4px;
+}
+
+QListWidget::item:selected {
+    background-color: #E3F2FD;
+    color: #1976D2;
+}
+
+/* Стиль для полей ввода */
+QLineEdit {
+    padding: 10px;
+    border: 2px solid #BBDEFB;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border-color: #2196F3;
+}
+
+/* Стиль для групповых рамок */
+QGroupBox {
+    border: 2px solid #BBDEFB;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px;
+    color: #1976D2;
+} 
